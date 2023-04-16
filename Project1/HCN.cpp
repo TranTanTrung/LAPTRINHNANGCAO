@@ -1,0 +1,41 @@
+#include <iostream>
+
+using namespace std;
+
+class hcn {
+	int d, r;
+public:
+	hcn(int _d = 0, int _r = 0) {
+		d = _d;
+		r = _r;
+	}
+	hcn(const hcn& h) {
+		d = h.d;
+		r = h.r;
+	}
+	~hcn() {};
+	friend istream& operator >> (istream& is, hcn& h) {
+		is >> h.d >> h.r;
+		return is;
+	}
+	friend ostream& operator << (ostream& os, hcn& h) {
+		os << "[HCN] " << h.d << "," << h.r << endl;
+		return os;
+	}
+	int chuvi() {
+		return (d + r) * 2;
+	}
+	bool operator < (hcn& h) {
+		if (chuvi() < h.chuvi()) {
+			return true;
+		}
+		return false;
+	}
+};
+
+int main() {
+	hcn h1, h2;
+	cin >> h1 >> h2;
+	cout << h1 << h2;
+	return 0;
+}

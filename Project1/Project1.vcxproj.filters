@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\QUATAITOANTU">
+      <UniqueIdentifier>{1f307a50-36a4-4025-b178-ace3c3f876af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Template">
+      <UniqueIdentifier>{b6e4b029-ed85-4718-aeb9-2d65cc6bf495}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CONTRO">
+      <UniqueIdentifier>{780d820f-e1da-463f-8622-6595dd42575f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\LAMTHEM">
+      <UniqueIdentifier>{221ce1ee-78b9-4c68-8690-2d511cef7fd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\VECTOR">
+      <UniqueIdentifier>{d2d87945-763e-473f-b565-047bdd32785a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\NHAPXUATFILE">
+      <UniqueIdentifier>{6bdf698a-0a0d-44d3-b166-693624d7cd7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\STACK VS QUEUE">
+      <UniqueIdentifier>{8b357698-0361-4566-b90c-8dbc5fd5a9b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\STRING">
+      <UniqueIdentifier>{cba7551a-decb-4803-b409-8557d4d73b40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BENNGOAI">
+      <UniqueIdentifier>{887270f4-a86e-462c-b8bc-290a31a1d63a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DATHUC.cpp">
+      <Filter>Source Files\QUATAITOANTU</Filter>
+    </ClCompile>
+    <ClCompile Include="DATHUC2.cpp">
+      <Filter>Source Files\QUATAITOANTU</Filter>
+    </ClCompile>
+    <ClCompile Include="QTaiMang.cpp">
+      <Filter>Source Files\QUATAITOANTU</Filter>
+    </ClCompile>
+    <ClCompile Include="QTaiMang2.cpp">
+      <Filter>Source Files\QUATAITOANTU</Filter>
+    </ClCompile>
+    <ClCompile Include="QTaiPSo.cpp">
+      <Filter>Source Files\QUATAITOANTU</Filter>
+    </ClCompile>
+    <ClCompile Include="PSOHONSO.cpp">
+      <Filter>Source Files\QUATAITOANTU</Filter>
+    </ClCompile>
+    <ClCompile Include="BAI2.cpp">
+      <Filter>Source Files\QUATAITOANTU</Filter>
+    </ClCompile>
+    <ClCompile Include="BAI3.cpp">
+      <Filter>Source Files\QUATAITOANTU</Filter>
+    </ClCompile>
+    <ClCompile Include="BUOI1.cpp">
+      <Filter>Source Files\QUATAITOANTU</Filter>
+    </ClCompile>
+    <ClCompile Include="PhanSo2.cpp">
+      <Filter>Source Files\QUATAITOANTU</Filter>
+    </ClCompile>
+    <ClCompile Include="XUATDIEM.cpp">
+      <Filter>Source Files\QUATAITOANTU</Filter>
+    </ClCompile>
+    <ClCompile Include="TGIAC.cpp">
+      <Filter>Source Files\QUATAITOANTU</Filter>
+    </ClCompile>
+    <ClCompile Include="HCN.cpp">
+      <Filter>Source Files\QUATAITOANTU</Filter>
+    </ClCompile>
+    <ClCompile Include="Template1.cpp">
+      <Filter>Source Files\Template</Filter>
+    </ClCompile>
+    <ClCompile Include="Template2.cpp">
+      <Filter>Source Files\Template</Filter>
+    </ClCompile>
+    <ClCompile Include="KhuonHinhTong.cpp">
+      <Filter>Source Files\Template</Filter>
+    </ClCompile>
+    <ClCompile Include="KhuonHinhSS.cpp">
+      <Filter>Source Files\Template</Filter>
+    </ClCompile>
+    <ClCompile Include="TEMPLATEHCN.cpp">
+      <Filter>Source Files\Template</Filter>
+    </ClCompile>
+    <ClCompile Include="CONTRO1.cpp">
+      <Filter>Source Files\CONTRO</Filter>
+    </ClCompile>
+    <ClCompile Include="KhuonHinh3.cpp">
+      <Filter>Source Files\Template</Filter>
+    </ClCompile>
+    <ClCompile Include="LOP1.1.PhanSo.cpp">
+      <Filter>Source Files\LAMTHEM</Filter>
+    </ClCompile>
+    <ClCompile Include="vector1.cpp">
+      <Filter>Source Files\VECTOR</Filter>
+    </ClCompile>
+    <ClCompile Include="vector2.cpp">
+      <Filter>Source Files\VECTOR</Filter>
+    </ClCompile>
+    <ClCompile Include="xoa_vector.cpp">
+      <Filter>Source Files\VECTOR</Filter>
+    </ClCompile>
+    <ClCompile Include="VECTOR3.cpp">
+      <Filter>Source Files\VECTOR</Filter>
+    </ClCompile>
+    <ClCompile Include="SOCHANLE.cpp">
+      <Filter>Source Files\QUATAITOANTU</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>Source Files\NHAPXUATFILE</Filter>
+    </ClCompile>
+    <ClCompile Include="fstream2.cpp">
+      <Filter>Source Files\NHAPXUATFILE</Filter>
+    </ClCompile>
+    <ClCompile Include="fstream1.cpp">
+      <Filter>Source Files\NHAPXUATFILE</Filter>
+    </ClCompile>
+    <ClCompile Include="fstream3.cpp">
+      <Filter>Source Files\NHAPXUATFILE</Filter>
+    </ClCompile>
+    <ClCompile Include="vector.cpp">
+      <Filter>Source Files\NHAPXUATFILE</Filter>
+    </ClCompile>
+    <ClCompile Include="HAUTO.cpp">
+      <Filter>Source Files\STACK VS QUEUE</Filter>
+    </ClCompile>
+    <ClCompile Include="QUEUE1.cpp">
+      <Filter>Source Files\STACK VS QUEUE</Filter>
+    </ClCompile>
+    <ClCompile Include="SOMOI.cpp">
+      <Filter>Source Files\QUATAITOANTU</Filter>
+    </ClCompile>
+    <ClCompile Include="DTHANG%28CHUAxong%29.cpp">
+      <Filter>Source Files\QUATAITOANTU</Filter>
+    </ClCompile>
+    <ClCompile Include="DAONGUOC1.cpp">
+      <Filter>Source Files\STRING</Filter>
+    </ClCompile>
+    <ClCompile Include="DAONGUOC2.cpp">
+      <Filter>Source Files\STRING</Filter>
+    </ClCompile>
+    <ClCompile Include="DAONGUOC3.cpp">
+      <Filter>Source Files\STRING</Filter>
+    </ClCompile>
+    <ClCompile Include="chuc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="banhvaha0.cpp">
+      <Filter>Source Files\BENNGOAI</Filter>
+    </ClCompile>
+    <ClCompile Include="DOIXUNG.cpp">
+      <Filter>Source Files\STRING</Filter>
+    </ClCompile>
+    <ClCompile Include="LOGIN_UP.cpp">
+      <Filter>Source Files\STRING</Filter>
+    </ClCompile>
+    <ClCompile Include="1718_2_LTNC_Midterm_02.cpp">
+      <Filter>Source Files\STRING</Filter>
+    </ClCompile>
+    <ClCompile Include="DEMCHUOI.cpp">
+      <Filter>Source Files\STRING</Filter>
+    </ClCompile>
+    <ClCompile Include="HPalindrome.cpp">
+      <Filter>Source Files\STRING</Filter>
+    </ClCompile>
+    <ClCompile Include="NUMCOUNT.cpp">
+      <Filter>Source Files\STRING</Filter>
+    </ClCompile>
+    <ClCompile Include="Capitalize.cpp">
+      <Filter>Source Files\STRING</Filter>
+    </ClCompile>
+    <ClCompile Include="XOACHUOI.cpp">
+      <Filter>Source Files\STRING</Filter>
+    </ClCompile>
+    <ClCompile Include="LOGIN_UP2.cpp">
+      <Filter>Source Files\STRING</Filter>
+    </ClCompile>
+    <ClCompile Include="DATHUC3.cpp">
+      <Filter>Source Files\QUATAITOANTU</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="input.txt">
+      <Filter>Source Files\NHAPXUATFILE</Filter>
+    </Text>
+    <Text Include="output.txt">
+      <Filter>Source Files\NHAPXUATFILE</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
