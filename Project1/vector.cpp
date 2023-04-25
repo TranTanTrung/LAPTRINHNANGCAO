@@ -22,23 +22,31 @@ int kiemtra(int n) {
 	}
 	return true;
 }
+int tong(int n){
+    int tong=0;
+    while(n>0){
+        if(kiemtra(n%10)==false){
+            tong=tong+n%10;
+        }
+        n=n/10;
+    }
+    return tong;
+}
 
 int main() {
-	ifstream ifile("input.txt");
-	ofstream ofile("output.txt");
 
 	int n;
-	ifile >> n;
+	cin >> n;
 	int a[100];
 	for (int i = 0; i < n; i++) {
-		ifile >> a[i];
+		cin >> a[i];
 	}
 	for (int i = 0; i < n; i++) {
 		if (kiemtra(a[i]) == true) {
-			ofile << a[i] << endl;
+			cout << tong(a[i]) << endl;
 		}
 		else {
-			ofile << "-1" << endl;
+			cout << "-1" << endl;
 		}
 	}
 	return 0;
