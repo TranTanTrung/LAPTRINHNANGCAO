@@ -9,30 +9,35 @@ public:
 		a = _a;
 		b = _b;
 	}
-	BacNhat(const BacNhat& n) {
-		a = n.a;
-		b = n.a;
+	BacNhat(const BacNhat& bn) {
+		a = bn.a;
+		b = bn.b;
 	}
 	~BacNhat() {};
-	friend istream& operator >> (istream& is, BacNhat& n) {
-		is >> n.a >> n.b;
+	friend istream& operator >> (istream& is, BacNhat& bn) {
+		is >> bn.a >> bn.b;
 		return is;
 	}
-	friend ostream& operator << (ostream& os, BacNhat& n) {
-		os << n.a << "x+" << n.b;
+	friend ostream& operator << (ostream& os, BacNhat& bn) {
+		if (bn.b > 0) {
+			os << bn.a << "x+" << bn.b;
+		}
+		else {
+			os << bn.a << "x" << bn.b;
+		}
 		return os;
 	}
 	int tinh(int x) {
 		return a * x + b;
 	}
-	void operator + (BacNhat& n) {
+	BacNhat operator + (BacNhat& bn) {
 		BacNhat kq;
-		kq.a = a + n.a;
-		kq.b = b + n.b;
-		cout << a << "x+" << b << "+" << n << "=" << kq;
+		kq.a = a + bn.a;
+		kq.b = b + bn.b;
+		return kq;
 	}
-	bool operator == (BacNhat& n) {
-		if (a + b == n.a + n.b) {
+	bool operator == (BacNhat& bn) {
+		if (a + b == bn.a + bn.b) {
 			return true;
 		}
 		return false;
@@ -40,21 +45,21 @@ public:
 };
 
 int main() {
-	BacNhat n1, n2;
-	cin >> n1 >> n2;
-	cout << n1 << endl;
-	cout << n2 << endl;
-	n1 + n2;
-	cout << endl;
+	BacNhat a, b;
+	cin >> a >> b;
 	int x;
 	cin >> x;
-	cout << n1.tinh(x) << endl;
-	cout << n2.tinh(x) << endl;
-	if (n1 == n2) {
-		cout << "TRUE";
+	cout << a << endl;
+	cout << b << endl;
+	BacNhat c = a + b;
+	cout << a << "+" << b << "=" << c << endl;
+	cout << a.tinh(x) << endl;
+	cout << b.tinh(x) << endl;
+	if (a == b) {
+		cout << "TRUE" << endl;
 	}
 	else {
-		cout << "FALSE";
+		cout << "FALSE" << endl;
 	}
 	return 0;
 }
