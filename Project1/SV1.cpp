@@ -33,19 +33,26 @@ public:
 	float tb() {
 		return (a + b + c) / 3;
 	}
+	bool operator > (sv& s) {
+		if (tb() > s.tb()) {
+			return true;
+		}
+		return false;
+	}
 };
 
 int main() {
 	sv s[100];
-	float min = 999;
-	int i = 0;
-	sv s1;
-	while (cin >> s[i]) {
-		if (s[i].tb() < min) {
-			min = s[i].tb();
+	int n = 0;
+	while (cin >> s[n]) {
+		n++;
+	}
+	n = n + 1;
+	sv s1 = s[0];
+	for (int i = 1; i < n; i++) {
+		if (s[i] > s1) {
 			s1 = s[i];
 		}
-		i++;
 	}
 	cout << s1;
 	return 0;
