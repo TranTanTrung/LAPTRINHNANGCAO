@@ -17,7 +17,7 @@ int main() {
 	float tl;
 	int a, b, c;
 	getline(cin, s);
-	cin >> tl >> a >> b >> s;
+	cin >> tl >> a >> b >> c;
 	xuat(s, tl, a, b, c);
 	return 0;
 }
