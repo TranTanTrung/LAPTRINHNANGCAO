@@ -1,40 +1,87 @@
 #include <iostream>
 #include <string>
-#include <algorithm>
+#include <iomanip>
+
 using namespace std;
 
-class sapxep {
+class diem {
 	string s;
-	int n;
+	float a, b;
 public:
-	sapxep(string _s = " ", int _n = 0) {
+	diem(string _s = "", float _a = 0, float _b = 0) {
 		s = _s;
-		n = _n;
+		a = _a;
+		b = _b;
 	}
-	sapxep(const sapxep& sa) {
-		s = sa.s;
-		n = sa.n;
+	diem(const diem& d) {
+		s = d.s;
+		a = d.a;
+		b = d.b;
 	}
-	~sapxep() {};
-	friend istream& operator >> (istream& is, sapxep& sa) {
-		is >> sa.s >> sa.n;
-		is.ignore();
+	~diem() {};
+	friend istream& operator >> (istream& is, diem& d) {
+		is >> d.s;
+		is >> d.a >> d.b;
 		return is;
 	}
-	friend ostream& operator << (ostream& os, sapxep& sa) {
-		os << sa.s << endl;
+	friend ostream& operator << (ostream& os, diem& d) {
+		os << d.s << " " << d.tb() << endl;
 		return os;
 	}
-	bool operator < (sapxep& sa) {
-		if (n < sa.n) {
-			return true;
-		}
-		return false;
-	}
-	bool operator == (sapxep& sa) {
-		if (n == sa.n) {
-			return true;
-		}
-		return false;
+	float tb() {
+		return (a + b) / 2;
 	}
 };
+class mang {
+	int n;
+	diem d[100];
+public:
+	mang(int _n = 0) {
+		n = _n;
+	}
+	mang(const mang& m) {
+		n = m.n;
+	}
+	~mang() {};
+	friend istream& operator >> (istream& is, mang& m) {
+		is >> m.n;
+		is.ignore();
+		for (int i = 0; i < m.n; i++) {
+			is >> m.d[i];
+		}
+		return is;
+	}
+	friend ostream& operator << (ostream& os, mang& m) {
+		for (int i = 0; i < m.n; i++) {
+			for (int j = 0; j < m.n; j++) {
+				if (m.d[i].tb() > m.d[j].tb()) {
+					diem tmp = m.d[i];
+					m.d[i] = m.d[j];
+					m.d[j] = tmp;
+				}
+			}
+		}
+		for (int i = 0; i < m.n; i++) {
+			cout << i + 1 << " " << m.d[i];
+		}
+		return os;
+	}
+	void sap_xep_giam_dan() {
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				if (d[i].tb() > d[j].tb()) {
+					diem tmp = d[i];
+					d[i] = d[j];
+					d[j] = tmp;
+				}
+			}
+		}
+	}
+};
+
+int main() {
+	mang m;
+	cin >> m;
+	cout << m;
+	return 0;
+}
