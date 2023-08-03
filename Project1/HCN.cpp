@@ -25,17 +25,27 @@ public:
 	int chuvi() {
 		return (d + r) * 2;
 	}
+	hcn operator + (hcn& h1){
+	    
+	}
 	bool operator < (hcn& h) {
 		if (chuvi() < h.chuvi()) {
 			return true;
 		}
 		return false;
 	}
+	
 };
 
 int main() {
 	hcn h1, h2;
 	cin >> h1 >> h2;
 	cout << h1 << h2;
+	if(h1<h2){
+	    cout<<"true";
+	}
+	else{
+	    cout<<"false";
+	}
 	return 0;
 }
